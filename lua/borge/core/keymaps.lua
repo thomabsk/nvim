@@ -33,6 +33,7 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<Cr>")
 
+keymap.set("n", 'gx', ":execute '!open ' . shellescape(expand('<cfile>'), 1)<CR>")
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
