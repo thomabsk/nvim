@@ -33,7 +33,8 @@ return packer.startup(function(use)
     use("nvim-lua/plenary.nvim")
 
     -- use("bluz71/vim-nightfly-guicolors")
-    use("rebelot/kanagawa.nvim")
+    -- use("rebelot/kanagawa.nvim")
+    use { "catppuccin/nvim", as = "catppuccin" }
 
     -- tmux & split window navigation
     use("christoomey/vim-tmux-navigator")
@@ -108,6 +109,10 @@ return packer.startup(function(use)
     -- git integration
     use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
+    -- debugging
+    use("mfussenegger/nvim-dap")
+    use("rcarriga/nvim-dap-ui")
+    use("mfussenegger/nvim-dap-python")
 
     if packer_bootstrap then
         require("packer").sync()
